@@ -22,7 +22,7 @@ class DataLoader:
         config_name : str
             Specific configuration/subset
         """
-        print(f"📥 Loading {config_name} from {dataset_name}...")
+        print(f" Loading {config_name} from {dataset_name}...")
         
         dataset = load_dataset(dataset_name, config_name)
         
@@ -32,7 +32,7 @@ class DataLoader:
         # Add sentence length
         self.test_df['length'] = self.test_df['sentence'].str.split().str.len()
         
-        print(f"✅ Loaded {len(self.train_df)} train, {len(self.test_df)} test samples")
+        print(f" Loaded {len(self.train_df)} train, {len(self.test_df)} test samples")
     
     def get_samples(self, n_samples=100, seed=42):
         """Get random sample of sentences"""
@@ -50,6 +50,6 @@ class DataLoader:
                              (self.test_df['length'] <= 15)]
         long = self.test_df[self.test_df['length'] > 15]
         
-        print(f"📏 Short (≤7): {len(short)} | Medium (8-15): {len(medium)} | Long (>15): {len(long)}")
+        print(f" Short (≤7): {len(short)} | Medium (8-15): {len(medium)} | Long (>15): {len(long)}")
         
         return short, medium, long
