@@ -16,5 +16,4 @@ The SST-2 dataset is **automatically downloaded** from Hugging Face.
 ## Cache Location
 
 Dataset is cached in:
-- Linux/Mac: `~/.cache/huggingface/datasets/`
-- Windows: `C:\Users\<username>\.cache\huggingface\datasets\`
+- Mac: `~/.cache/huggingface/datasets/`
