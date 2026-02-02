@@ -3,7 +3,7 @@
 [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Team:** ModelMiners (Abdul Aahad Qureshi, Khyzer Baig)  
+**Team:** ModelMiners (Abdul Aahad Qureshi, Khyzar Baig)  
 **Course:** Interpretable Machine Learning (iML) - Winter 2025/26  
 **Supervisor:** Prof. Dr. Marius Lindauer, Lukas Fehring  
 **Institution:** Leibniz Universität Hannover
@@ -174,7 +174,7 @@ iml_lime_stability/
 
 **ModelMiners**
 - Abdul Aahad Qureshi - [GitHub](https://github.com/Ahad002)
-- Khyzer Baig
+- Khyzar Baig
 
 **Supervisor:** Prof. Dr. Marius Lindauer, Lukas Fehring
 
