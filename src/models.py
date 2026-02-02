@@ -20,16 +20,16 @@ class SimpleLogisticModel:
         self.is_trained = False
 
     def fit(self, texts, labels):
-        print("🔄 Vectorizing text...")
+        print(" Vectorizing text...")
         X = self.vectorizer.fit_transform(texts)
-        print(f"📊 Feature matrix: {X.shape}")
+        print(f" Feature matrix: {X.shape}")
 
-        print("🔄 Training model...")
+        print(" Training model...")
         self.model.fit(X, labels)
         self.is_trained = True
 
         train_acc = accuracy_score(labels, self.model.predict(X))
-        print(f"✅ Training accuracy: {train_acc:.3f}")
+        print(f" Training accuracy: {train_acc:.3f}")
 
     def predict_proba(self, texts):
         if isinstance(texts, str):
@@ -50,7 +50,7 @@ class DistilBERTModel:
         model_name : str
             Hugging Face model identifier
         """
-        print(f"📥 Loading {model_name}...")
+        print(f" Loading {model_name}...")
         # Load tokenizer (converts text to numbers)
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         # Load pre-trained model
@@ -60,7 +60,7 @@ class DistilBERTModel:
         # Check if GPU available
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.model.to(self.device)
-        print(f"✅ Model loaded on {self.device}")
+        print(f" Model loaded on {self.device}")
         self.is_trained = True  # Already pre-trained
 
     def predict_proba(self, texts):
