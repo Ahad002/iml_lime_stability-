@@ -33,7 +33,7 @@ This project systematically analyzes the **stability of LIME (Local Interpretabl
 ### Installation
 ```bash
 # Clone repository
-git clone https://github.com/khyzar/iml_lime_stability.git
+git clone https://github.com/Ahad002/iml_lime_stability.git
 cd iml_lime_stability
 
 # Create virtual environment
